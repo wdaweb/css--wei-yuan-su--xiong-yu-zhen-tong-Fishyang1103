@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>針筒</title>
+  <style>
+    .box {
+      background-color: rgb(230, 230, 230);
+      border-radius: 0 10px 10px 0;
+      border: 2px solid rgb(184, 184, 184);
+      width: 440px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .box::before {
+      content: "";
+      width: 50px;
+      height: 120px;
+      background-color: rgb(230, 230, 230);
+      border: 2px solid rgb(184, 184, 184);
+      position: absolute;
+      border-radius: 10px;
+      top: -20px;
+      left: -50px;
+    }
+
+    .box::after {
+      content: "";
+      width: 100px;
+      height: 1px;
+      background-color: black;
+      position: absolute;
+      top: 40px;
+      right: -101px;
+    }
+
+    .box1 {
+      background-color: black;
+      width: 40px;
+      height: 120px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .origin {
+      color: rgb(179, 175, 175);
+      left: -145px;
+      bottom: -15px;
+      position: absolute;
+      font-size: 14px;
+    }
+
+    .box1::before {
+      content: "";
+      background-color: rgb(230, 230, 230);
+      border: 2px solid rgb(184, 184, 184);
+      border-right: 0px;
+      height: 118px;
+      width: 150px;
+      top: 0;
+      left: -150px;
+      position: absolute;
+      background-image: repeating-linear-gradient(90deg, #333 0px, #333 1px, transparent 1px, transparent 10px);
+      background-position: 10px 0;
+      background-size: 100% 15px;
+      background-repeat: no-repeat;
+    }
+
+    .box1::after {
+      content: "";
+      background: rgb(245, 255, 156);
+      border: 2px solid rgb(184, 184, 184);
+      border-left: 0px;
+      height: 118px;
+      width: 150px;
+      position: absolute;
+      top: 0;
+      right: -150px;
+      background-image: repeating-linear-gradient(90deg, #333 0px, #333 1px, transparent 1px, transparent 10px);
+      background-position: 10px 0;
+      background-size: 100% 15px;
+      background-repeat: no-repeat;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="box">
+
+    <div class="box1">
+      <div class="origin">
+        <p>Made in Taiwan</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>熊</title>
+  <style>
+    .container {
+      background: black;
+      border-radius: 50%;
+      width: 280px;
+      height: 280px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+
+    .container::before {
+      content: "";
+      width: 50px;
+      height: 50px;
+      background: white;
+      border: 10px solid black;
+      border-radius: 50%;
+      position: absolute;
+      top: 0px;
+      left: 15px;
+    }
+
+    .container::after {
+      content: "";
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      border: 10px solid black;
+      position: absolute;
+      top: 0px;
+      right: 15px;
+    }
+
+    .eyes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%;
+    }
+
+    .eyes::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      border: 10px solid white;
+      top: 70px;
+      left: 60px;
+    }
+
+    .eyes::after {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background: black;
+      border-radius: 50%;
+      position: absolute;
+      border: 10px solid white;
+      top: 70px;
+      right: 60px;
+    }
+
+    .nose {
+      width: 120px;
+      height: 80px;
+      background: white;
+      position: absolute;
+      top: 130px;
+      left: 80px;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%;
+    }
+
+    .nose::before {
+      content: "";
+      width: 30px;
+      height: 20px;
+      background: black;
+      position: absolute;
+      border-radius: 50%;
+      top: 10px;
+      left: 45px;
+    }
+
+    .nose::after {
+      content: "";
+      width: 70px;
+      height: 30px;
+      background: black;
+      position: absolute;
+      border-radius: 50%;
+      top: 40px;
+      left: 27px;
+    }
+
+    .v {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      transform: skewX(50deg);
+      background: white;
+      bottom: 20px;
+      left: 110px;
+    }
+
+    .v::after {
+      content: "";
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background: white;
+      transform: skewX(-65deg);
+      bottom: 0px;
+      right: -40px;
+    }
+
+    .red {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%;
+    }
+
+    .red::before {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background: red;
+      position: absolute;
+      border-radius: 50%;
+      top: 130px;
+      left: -15px;
+    }
+
+    .red::after {
+      content: "";
+      width: 70px;
+      height: 70px;
+      background: red;
+      position: absolute;
+      border-radius: 50%;
+      top: 130px;
+      right: -15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="eyes"></div>
+    <div class="nose"></div>
+    <div class="v"></div>
+    <div class="red"></div>
+  </div>
+</body>
+
+</html>
